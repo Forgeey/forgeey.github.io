@@ -1,0 +1,56 @@
+body {
+    font-family: "Noto Sans", sans-serif;
+}
+
+.main-title-block {
+    margin-top: 100px;
+}
+
+.main-title {
+    display: none;
+    font-size: 62.5px;
+    font-weight: 700;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+#main-title-name {}
+
+.typewriter {
+    /* font-family: monospace; */
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 4px solid black;
+    width: 20ch;
+    animation: blink 0.7s step-end infinite;
+}
+
+@keyframes blink {
+    0%,
+    100% {
+        border-color: transparent;
+    }
+    50% {
+        border-color: black;
+    }
+}
+
+.bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+#bg-draft {
+    background-image: url('/img/bg_draft.png');
+    z-index: -2;
+}
+
+#bg-colored {
+    background-image: url('/img/bg_colored.png');
+    z-index: -1;
+    display: none;
+}
+
