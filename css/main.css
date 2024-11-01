@@ -8,9 +8,17 @@ body {
 
 .main-title {
     display: none;
-    font-size: 62.5px;
+    font-size: 4em;
     font-weight: 700;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.main-subtitle {
+    font-family: 'Dancing Script', cursive;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 2s ease, transform 2s ease;
+    font-size: 2em;
 }
 
 #main-title-name {}

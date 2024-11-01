@@ -17,6 +17,10 @@ $(document).ready(function() {
             } else {
                 setTimeout(() => {
                     $main_title_name.removeClass("typewriter");
+                    $(".main-subtitle").css({
+                        opacity: 1,
+                        transform: "translateY(0)"
+                    });
                     $("#bg-colored").fadeIn(1500);
                     $("#bg-draft").hidden = true;
                 }, 1000);
