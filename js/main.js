@@ -1,6 +1,6 @@
 $(document).ready(function() {
     const colored_background_loc = "/img/bg_colored.png";
-    const text = ["a brony", "a new animator", "a gamer", "Forgeey!"];
+    const text = ["a brony", "a gamer", "a new animator", "Forgeey!"];
     const RATIO = 0.6;
     setTimeout(() => {
         const $main_title_name = $("#main-title-name");
@@ -23,7 +23,6 @@ $(document).ready(function() {
                         transform: "translateY(0)"
                     });
                     $("#bg-colored").fadeIn(1500);
-                    $("#bg-draft").hidden = true;
                     $(".content").fadeIn(1500);
                     // TODO: set bg color to the image bg color
                 }, 1000);
