@@ -1,8 +1,9 @@
 $(document).ready(function() {
+    const colored_background_loc = "/img/bg_colored.png";
+    const text = ["a brony", "a new animator", "a gamer", "Forgeey!"];
+    const RATIO = 0.6;
     setTimeout(() => {
         const $main_title_name = $("#main-title-name");
-        const colored_background_loc = "/img/bg_colored.png";
-        const text = ["a brony", "a new animator", "a gamer", "Forgeey!"];
         let index = 0;
         let message_index = 0;
 
@@ -23,6 +24,8 @@ $(document).ready(function() {
                     });
                     $("#bg-colored").fadeIn(1500);
                     $("#bg-draft").hidden = true;
+                    $(".content").fadeIn(1500);
+                    // TODO: set bg color to the image bg color
                 }, 1000);
             }
         }
@@ -41,5 +44,9 @@ $(document).ready(function() {
             img.src = colored_background_loc;
             $(".main-title").fadeIn(1000, type);
         });
-    }, 2000)
+    }, 2000);
+    $(".content").css("top", $(window).width()*RATIO);
+    $(window).resize(() => {
+        $(".content").css("top", $(window).width()*RATIO);
+    });
 });
